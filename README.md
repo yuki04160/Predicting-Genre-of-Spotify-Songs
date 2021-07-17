@@ -38,7 +38,7 @@ Overall, I found that XGBoost model performed better and in terms of TPR, among 
 2. Deal with the remaining outliers: since there are still some outliers that haven't been treated yet, I can try 
    - Binning 
    - Subsetting
-   - Feature transformatio
+   - Feature transformation
      - Right skewed data: log transformation
      - Left skewed data: square transformation
 4. Apply feature selection: based on feature importance results, I can reduce the number of input variables.
