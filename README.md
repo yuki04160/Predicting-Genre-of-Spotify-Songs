@@ -1,1 +1,1 @@
-# Predict-Genre-of-Spotify-Songs
+# Predicting Genre of Spotify Songs
