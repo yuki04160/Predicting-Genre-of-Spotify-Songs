@@ -10,23 +10,23 @@ Spotify is a digital music service that gives customers access to millions of so
    - Outliers treatment
 ## Data Preprocessing
    - Feature Scaling
-     - Since predictors have varying scales and KNN is a distance-based algorithm, I standardized data using scale function
+     - Since predictors have varying scales and KNN is a distance-based algorithm, I standardized data using scale function.
    - Split into training (0.8) and test (0.2)
    - Balance training data
-     - I used SMOTE function to undersample a majority class and oversample a minority class
+     - I used SMOTE function to undersample a majority class and oversample a minority class.
 ## Data Modeling
 1. Multiclass logistic regression
-   - I built 15 logistic regression models, one per genre
-   - I used the Softmax function to transform unrelated probabilities into a probability distribution over 15 genres
+   - I built 15 logistic regression models, one per genre.
+   - I used the Softmax function to transform unrelated probabilities into a probability distribution over 15 genres.
 2. K-nearest neighbors
-   - I used Euclidean & Manhattan distance
-   - To find optimal K, I plotted accuracy plots
+   - I used Euclidean & Manhattan distance.
+   - To find optimal K, I plotted accuracy plots.
 3. Decision tree
 4. Random forest (bagging)
-   - To tune hyperparameters ntree, I plotted the trees & Error
-   - To tune hyperparameters mtry, I used the tuneRF function
+   - To tune hyperparameters ntree, I plotted the trees & Error.
+   - To tune hyperparameters mtry, I used the tuneRF function.
 5. XGBoost (boosting)
-   - To find the best iteration, I used xgb.cv function to perform cross-validation
+   - To find the best iteration, I used xgb.cv function to perform cross-validation.
 ## Multiclass Classification Model Evaluation
    - Feature importance
    - Overall accuracy
