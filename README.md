@@ -19,7 +19,7 @@ Spotify is a digital music service that gives customers access to millions of so
    - I built 15 logistic regression models, one per genre
    - I used Softmax function to transform unrelated probabilities into a probability distribution over 15 genres
 2. K-nearest neighbors
-   - Euclidean & Manhattan distance
+   - I used Euclidean & Manhattan distance
    - To find optimal K, I plotted accuracy plots
 3. Decision tree
 4. Random forest (bagging)
