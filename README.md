@@ -3,3 +3,38 @@ To predict the genre of songs, I built a Multiclass Logistic Regression, KNN, De
 ## Project Background
 Spotify is a digital music service that gives customers access to millions of songs. To provide better customer services, Spotify provides different genre-based playlists for the customers to discover. Thus, this project aims to see if we can correctly predict the music genre of a song and which audio features are important when forecasting.
 ## Exploratory Data Analysis
+   - Variable identification
+   - Univariate analysis
+   - Bi-variate analysis
+   - Missing value treatment
+   - Outliers treatment
+## Data Preprocessing
+   - Feature Scaling
+     - Since predictors have varying scales and KNN is a distance-based algorithm, I standardized data using scale function
+   - Split into training (0.8) and test (0.2)
+   - Balance training data
+     - I used SMOTE function to undersample a majority class and oversample a minority class
+## Data Modeling
+1. Multiclass Logistic Regression
+   - I built 15 logistic regression models, one per genre
+   - I used Softmax function to transform unrelated probabilities into a probability distribution over 15 genres
+2. K-nearest neighbors
+   - Euclidean & Manhattan distance
+   - To find optimal K, I plotted accuracy plots
+3. Decision tree
+4. Random forest (bagging)
+   - To tune hyperparameters ntree, I plotted the trees & Error
+   - To tune hyperparameters mtry, I used the tuneRF function
+5. XGBoost (boosting)
+   - To find the best iteration, I used xgb.cv function to perform cross-validation
+## Multiclass Classification Model Evaluation
+   - Feature importance
+   - Overall accuracy
+   - True Positive Rate of each genre
+   - F1 score of each genre
+## Conclusion
+Overall, I found that XGBoost model performed better and in terms of TPR, among 15 genres, 7 of them have rates higher than 85%. However, genres such as "Pop" and "Underground Rap" have TPR lower than 30%. That is to say, the model can only highly correctly predict some of the genres. Thus, in the future, to improve the model, I can try the following things:
+1. Add more data: since "Pop" has the least number of observations in the dataset, I can add more Pop songs' data.
+2. Perform feature transformation: for right skewed data, I can perfrom log transformation, and for left skewed data, I can perform square transformation. 
+3. Deal with the remaining outliers: since there are still some outliers that haven't been treated yet, I can also try binning or subsetting.
+4. Apply feature selection: based on feature importance results, I can reduce the number of input variables.
