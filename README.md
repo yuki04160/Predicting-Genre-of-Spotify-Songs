@@ -34,7 +34,7 @@ Spotify is a digital music service that gives customers access to millions of so
    - F1 score of each genre
 ## Conclusion
 Overall, I found that XGBoost model performed better and in terms of TPR, among 15 genres, 7 of them have rates higher than 85%. However, genres such as "Pop" and "Underground Rap" have TPR lower than 30%. That is to say, the model can only highly correctly predict some of the genres. Thus, in the future, to improve the model, I can try the following things:
-1. Add more data: since "Pop" has the least number of observations in the dataset, I can add more Pop songs' data.
+1. Add more data: since "Pop" has the least number of observations in the dataset, I can add more Pop songs' data to increase its TPR.
 2. Perform feature transformation: for right skewed data, I can perfrom log transformation, and for left skewed data, I can perform square transformation. 
 3. Deal with the remaining outliers: since there are still some outliers that haven't been treated yet, I can also try binning or subsetting.
 4. Apply feature selection: based on feature importance results, I can reduce the number of input variables.
