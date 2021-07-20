@@ -33,8 +33,7 @@ Spotify is a digital music service that gives customers access to millions of so
    - True Positive Rate of each genre
    - F1 score of each genre
 ## Conclusion
-
-<strong>TPR table of XGBoost</strong>
+<strong>TPR table of XGBoost model</strong>
 **Genre**|Dark Trap|dnb|Emo|hardstyle|Hiphop|Pop|psytrance|Rap|RnB|techhouse|techno|trance|trap|Trap Metal|Underground Rap
 -----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----
 **TPR**|0.40|0.99|0.70|0.93|0.43|0.23|0.91|0.52|0.47|0.88|0.87|0.87|0.86|0.50|0.29
