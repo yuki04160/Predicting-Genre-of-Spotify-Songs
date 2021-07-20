@@ -35,9 +35,11 @@ Spotify is a digital music service that gives customers access to millions of so
 ## Conclusion
 Overall, I found that when predicting genre, “tempo” is the most important audio feature. Also, I found that XGBoost model performed better.
 
-**Models**|Logistic Regression|KNN (Euclidean)|KNN (Manhattan)|Decision Tree|Random Forest|XGBoosting
+
+**Model**|Logistic Regression|KNN (Euclidean)|KNN (Manhattan)|Decision Tree|Random Forest|XGBoosting
 -----|-----|-----|-----|-----|-----|-----
 **Accuracy**|0.53|0.53|0.56|0.48|0.65|0.66
+
 
 True Positive Rate table of XGBoost model
 **Genre**|Dark Trap|dnb|Emo|hardstyle|Hiphop|Pop|psytrance|Rap|RnB|techhouse|techno|trance|trap|Trap Metal|Underground Rap
