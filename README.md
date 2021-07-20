@@ -33,6 +33,11 @@ Spotify is a digital music service that gives customers access to millions of so
    - True Positive Rate of each genre
    - F1 score of each genre
 ## Conclusion
+
+**Genre**|Dark Trap|dnb|Emo|hardstyle|Hiphop|Pop|psytrance|Rap|RnB|techhouse|techno|trance|trap|Trap Metal|Underground Rap
+-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----
+**TPR**|0.40|0.99|0.70|0.93|0.43|<span style="color:red">0.23</span>|0.91|0.52|0.47|0.88|0.87|0.87|0.86|0.50|<span style="color:red">0.29</span>
+
 Overall, I found that XGBoost model performed better and in terms of TPR, among 15 genres, 7 of them have rates higher than 85%. However, genres such as "Pop" and "Underground Rap" have TPR lower than 30%. That is to say, the model can only highly correctly predict some of the genres. Thus, in the future, to improve the model, I can try the following things:
 1. Add more data: since "Pop" has the least number of observations in the dataset, I can add more Pop songs' data to increase its TPR.
 2. Deal with the remaining outliers: since there are still some outliers that haven't been treated yet, I can try:
