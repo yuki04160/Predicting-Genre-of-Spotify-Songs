@@ -20,7 +20,7 @@ Spotify is a digital music service that gives customers access to millions of so
    - I used the Softmax function to transform unrelated probabilities into a probability distribution over 15 genres.
 2. K-nearest neighbors
    - I used Euclidean & Manhattan distance.
-   - To find optimal K, I plotted accuracy plots.
+   - To find optimal K, I used For loop and plotted accuracy plots.
 3. Decision tree
 4. Random forest (bagging)
    - To tune hyperparameters ntree, I plotted the trees & Error.
