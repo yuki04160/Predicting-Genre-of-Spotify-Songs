@@ -18,6 +18,7 @@ Spotify is a digital music service that gives customers access to millions of so
 1. Multiclass logistic regression
    - I used For loop to build 15 logistic regression models, one per genre.
    - I used the Softmax function to transform unrelated probabilities into a probability distribution over 15 genres.
+   - The predicted genre will be the one associated with the maximum probability.
 2. K-nearest neighbors
    - I used Euclidean & Manhattan distance.
    - To find optimal K, I used For loop and plotted accuracy plots.
