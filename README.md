@@ -14,7 +14,7 @@ Spotify is a digital music service that gives customers access to millions of so
    - Split into training (0.8) and test (0.2)
    - Balance training data
      - I used SMOTE function to undersample a majority class and oversample a minority class.
-## Data Modeling
+## Modeling
 1. Multiclass logistic regression
    - I used For loop to build 15 logistic regression models, one per genre.
    - I used the Softmax function to transform unrelated probabilities into a probability distribution over 15 genres.
